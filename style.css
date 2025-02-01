@@ -26,6 +26,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -120,7 +121,7 @@ ul li a:hover {
   border: 1.5px solid var(--text-color);
 }
 
-/* SOCIAL LINKS*/
+/* SOCIAL LINKS */
 #social-links {
   display: flex;
   justify-content: center;
@@ -145,4 +146,15 @@ footer {
   padding: 16px 0;
   text-align: center;
   font-size: 80%;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(.//assets/bg-desktop-light.jpg);
+  }
 }
